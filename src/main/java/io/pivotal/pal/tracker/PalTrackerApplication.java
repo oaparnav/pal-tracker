@@ -17,7 +17,7 @@ public class PalTrackerApplication {
     }
 
     @Bean
-    public MysqlDataSource getMySqlDataource() {
+    public MysqlDataSource dataSource() {
         MysqlDataSource dataSource = new MysqlDataSource();
         dataSource.setURL(dataSourceUrl);
         return dataSource;
